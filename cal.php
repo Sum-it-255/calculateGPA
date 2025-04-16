@@ -20,7 +20,7 @@ body {
   padding-bottom: 50px;
 }
 
-#roleSection {
+/* #roleSection {
   background: rgba(255,255,255,0.9);
   border-radius: 15px;
   padding: 2rem;
@@ -28,26 +28,26 @@ body {
   max-width: 800px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
   backdrop-filter: blur(10px);
-}
+} */
 
-#roleh {
+/* #roleh {
   text-align: center;
   font-weight: 1000;
   font-size: 50px;
   color: #3498db;
   text-shadow: 2px 2px 4px rgba(52,152,219,0.2);
   margin-bottom: 2rem;
-}
+} */
 
-.choose {
+/* .choose {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   padding-top: 5em;
-}
+} */
 
-.rolebtn {
+/* .rolebtn {
   width: 80%;
   max-width: 300px;
   padding: 2rem;
@@ -59,12 +59,12 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(52,152,219,0.3);
-}
+} */
 
-.rolebtn:hover {
+/* .rolebtn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(52,152,219,0.4);
-}
+} */
 
 table {
   width: 60%;
@@ -145,7 +145,7 @@ button[type="button"]:hover {
 }
 
 .student { 
-  display: none;
+  /* display: none; */
 }
 
 .student-form {
@@ -258,7 +258,7 @@ button[type="button"]:hover {
 }
 
 #studentSection {
-  display: none;
+  /* display: none; */
 }
 
 .result-section {
@@ -331,14 +331,15 @@ button[type="button"]:hover {
     <?php include 'nav.php'; ?>
   </div>
 
-  
+<!--   
   <div id="roleSection">
     <h1 id="roleh">YOUR ROLE</h1>
     <div class="choose">
       <button class="rolebtn" id="studentBtn" value="student">STUDENT</button>
       <button class="rolebtn" id="teacherBtn" value="teacher">TEACHER</button>
     </div>
-  </div>
+  </div> 
+  -->
 
   
   <div class="student" id="studentSection">
@@ -644,21 +645,21 @@ button[type="button"]:hover {
 
 <script>
    
-    document.getElementById("studentBtn").addEventListener("click", function() {
-    document.getElementById("roleSection").style.display = "none";
-    document.getElementById("studentSection").style.display = "block";
-  });
+  //   document.getElementById("studentBtn").addEventListener("click", function() {
+  //   document.getElementById("roleSection").style.display = "none";
+  //   document.getElementById("studentSection").style.display = "block";
+  // });
   
   
-  document.getElementById("teacherBtn").addEventListener("click", function() {
-    document.getElementById("roleSection").style.display = "none";
-    document.getElementById("studentSection").style.display = "block";
-  });
+  // document.getElementById("teacherBtn").addEventListener("click", function() {
+  //   document.getElementById("roleSection").style.display = "none";
+  //   document.getElementById("studentSection").style.display = "block";
+  // });
 
-  function showRoleSection() {
-    document.getElementById("studentSection").style.display = "none";
-    document.getElementById("roleSection").style.display = "block";
-  }
+  // function showRoleSection() {
+  //   document.getElementById("studentSection").style.display = "none";
+  //   document.getElementById("roleSection").style.display = "block";
+  // }
 
   
   function deleteRow(button) {
